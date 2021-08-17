@@ -15,15 +15,16 @@
 
 <div align="justified"><p>As mentioned earlier, the daily lives of the people revolves around the functioning of the railway network. This presents multiple business opportunities for entrepreneurs who can look to set up different outlets around the railway stations in order to cater to the millions of commuters that travel daily. We will explore one such instance in this case. </p></div>
 
-<div align="justified"><p> For this case study, we will adopt the perspective of a budding chef who wants to decide on the location of his new restaurant. Like the rest of the people in the city, he is acutely aware of the importance of railways in shuffling the people to and fro throughout the city. As such, he decides that any location that is close enough to the railway staion will attract more customers and thereby make his restaurant business profitable.</p> </div>
+<div align="justified"><p> For this case study, we will adopt the perspective of a budding chef who wants to decide on the location of his new restaurant. Like the rest of the people in the city, he is acutely aware of the importance of railways in shuffling the people to and fro throughout the city. As such, he decides that any location that is close enough to the railway station will attract more customers and thereby make his restaurant business profitable.</p> </div>
 
 <div align="justified"><p> However, he is also aware that he is not the only one with this particular idea and thousands, if not millions, of other budding chefs must have also thought about this idea. Therefore, he has to apply some data analytics to hone in on the location of his new restaurant. To do this, he decides on a list of simple criteria that he believes will deliver the most profits. These are: </p> </div>
   <p>1. The restaurant needs to be located near the stations on the Western line of the railway network. This is because of the higher ridership on the line compared to other lines</p>
   <p>2. The restaurnt needs to be located within the Mumbai city only, and not the adjoining suburban regions. For this purpose, he will only consider locations south of Borivali (refer map above)</p>
   <p>3. The restaurant should be within the walkable distance of the station. Therefore, locations within 500m of the station will be considered</p>
-  <p>4. And finally, it would be ideal if the restaurant did not have any competing restaurants nearby, since they would also be vying for the same customers and will drive down his business</p>
+  <p>4. The restaurant will serve Indian cuisine, Chinese cuisine, and also provide some fast food snacks</p>
+  <p>5. And finally, it would be ideal if the restaurant did not have any competing restaurants nearby, since they would also be vying for the same customers and will drive down his business</p>
 
-<div align="justified"><p> With these criteria in mind, let us look at the data that will be required for the analysis </p><div align="justified">
+<div align="justified"><p> With these criteria in mind, let us look at the data that will be required for the analysis. </p><div align="justified">
   
 ## Data
   
