@@ -1,4 +1,6 @@
-# Capstone Assignment | Ideal Locations for restaurants in Mumbai
-## Prabhav Pratyaksh, August 2021
+# Capstone Assignment | Ideal Locations for restaurant in Mumbai
+### Prabhav Pratyaksh, August 2021
+
+## Introduction
 
 
