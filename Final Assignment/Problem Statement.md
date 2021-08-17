@@ -28,8 +28,8 @@
 ## Data
   
 The data required for this exercise will be pretty trivial. We will use Foursquare data in conjunction with the list of the stations on the Western Line.
-  <p> </p>
-To **obtain** the list of the stations we will utilise this [Wikipedia link](https://en.wikipedia.org/wiki/List_of_Mumbai_Suburban_Railway_stations) to get the list of stations. Once we get that, we can use the Foursquare API to request data for different venues around the station.
+  
+To obtain the list of the stations we will utilise this [Wikipedia link](https://en.wikipedia.org/wiki/List_of_Mumbai_Suburban_Railway_stations) to get the list of stations. Once we get that, we can use the Foursquare API to request data for different venues around the station within a 500m radius.
   
   
 
