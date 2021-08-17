@@ -1,4 +1,4 @@
-# Capstone Assignment | Restaurant location hunting in Mumbai
+# Capstone Assignment | Restaurant location scouting in Mumbai
 ### Prabhav Pratyaksh, August 2021
 
 ## Introduction
