@@ -138,6 +138,6 @@ However, as a starting point, this analysis helped us to narrow down potential l
 
     > Please view the accompanying notebook through the nbviewer and not on Github, since Github will not render interactive elements such as maps
  
-    <br> </br>    
+<br> </br>    
     
 Thank you for reviewing!    
