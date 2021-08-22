@@ -135,3 +135,7 @@ Of course, this was a very simplistic analysis. We could have used even more com
     6. availability of logistic supply chain, etc.    
     
 However, as a starting point, this analysis helped us to narrow down potential locations and allow a starting point from which more complex analysis could be done. Much of this code and the resulting analysis can be reused in different modules that aim to do more complex analysis.    
+
+    > Please view the accompanying notebook through the nbviewer and not on Github, since Github will not render interactive elements such as maps
+    
+Thank you for reviewing!    
