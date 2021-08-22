@@ -47,7 +47,7 @@ As for the tools used in Python, we installed the following libraries:
 ## Methodology
   
 ### Webscraping  
-  <br></br>
+  <br>
 sdsd
   1.
   2.
