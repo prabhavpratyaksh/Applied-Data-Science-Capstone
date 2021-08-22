@@ -36,5 +36,14 @@ The data required for this exercise will be pretty trivial. We will use Foursqua
   
 To obtain the list of the stations we will utilise this [Wikipedia link](https://en.wikipedia.org/wiki/List_of_Mumbai_Suburban_Railway_stations) to get the list of stations. Once we get that, we can use the Foursquare API to request data for different venues around the station within a 500m radius.
   
+As for the tools used in Python, we installed the following libraries:
+  1. Numpy
+  2. Pandas
+  3. BeautifulSoup
+  4. Geocoder
+  5. Folium 
   
+## Methodology
+  
+### Webscraping  
 
