@@ -105,9 +105,9 @@ Now we proceed to make a heatmap that shows the locations of competing restauran
   
 ### Heatmap Visualization <a name="Heatmap"></a>    
   
-Since our restaurant will serve only Indian cuisine, Chinese cuisine, and fast foods we will filter our dataframe to only include these venue categories. Once we do that, we have our data ready to make a heatmap. Do note that this heatmap, will be added as an additional layer on top of our base map created earlier. We get the following map
+Since our restaurant will serve only Indian cuisine, Chinese cuisine, and fast foods we will filter our dataframe to only include these venue categories. Once we do that, we have our data ready to make a heatmap. Do note that this heatmap will be added as an additional layer on top of our base map created earlier. We get the following map
     
-    ![Alt text](https://github.com/prabhavpratyaksh/Coursera_Capstone/blob/master/Final%20Assignment/Screenshots/SS%20-%20final%20map%20layer.png "Foursquare venue categories" )
+![Alt text](https://github.com/prabhavpratyaksh/Coursera_Capstone/blob/master/Final%20Assignment/Screenshots/SS%20-%20final%20map%20layer.png "Foursquare venue categories" )
 
 Now, we have this map, we can do a simple analysis to get an idea about potential locations to open the restaurant and also the locations to avoid building it.
     
@@ -117,7 +117,7 @@ Now, we come to the final phase of our analysis. The map rendered above should g
     
 If we filter our common venues for these 5 stations, we get the following result
     
-    ![Alt text](https://github.com/prabhavpratyaksh/Coursera_Capstone/blob/master/Final%20Assignment/Screenshots/SS%20-%20locations.png "Map of stations on Western Line" )
+![alt text](https://github.com/prabhavpratyaksh/Coursera_Capstone/blob/master/Final%20Assignment/Screenshots/SS%20-%20locations.png "Map of stations on Western Line")
     
 Note that for Ram Mandir station and Vile Parle station, we have Indian and Fast Food restaurants as the most common venue. Hence, we can remove these from our scope. Therefore, we have **Malad**, **Matunga Road**, and **Santacruz stations** as the ideal locations for opening our restaurant.
     
