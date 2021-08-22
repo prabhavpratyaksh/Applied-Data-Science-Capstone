@@ -11,6 +11,8 @@
     3. [Geographic Visualization](#Geographic)
     4. [Foursquare API call](#Foursquare)
     5. [Heatmap Visualization](#Heatmap)
+ 5. [Results & Discussion](#Results)
+ 6. [Conclusion](#Conclusion)
 
 
 ## Introduction <a name="introduction"></a>
@@ -64,7 +66,7 @@ We use the html parsing capabilities of BeautifulSoup to get only the relevant f
   
   ![Alt text](https://github.com/prabhavpratyaksh/Coursera_Capstone/blob/master/Final%20Assignment/Screenshots/SS%20-%20Wikipedia%20convert%20to%20dataframe.png "Dataframe of stations")
   
-Now, we filer for the stations on the Western Line and then append the word "Station" to every record. The former step is done since we limit our search to only the Western line (due to higher ridership) and the latter step is done so that the geocoding of our stations can be done without ambiguity. Finally, we get the following dataframe
+Now, we filer for the stations on the Western Line and then append the word "Station" to every record. The former step is done since we limit our search to only the Western line (due to higher ridership) and the latter step is done so that the geocoding of our stations can be done without ambiguity. Finally, we get the following dataframe:
   
   ![Alt text](https://github.com/prabhavpratyaksh/Coursera_Capstone/blob/master/Final%20Assignment/Screenshots/SS%20-%20Station%20df.png "Station dataframe")
   
@@ -76,7 +78,7 @@ To geocode the stations, we will use the geopy and the geocoder libraries in con
   
 ### Geographic Visualization <a name="Geographic"></a>  
   
-In this step, we attempt to place the stations on a map of the city. Furthermore, as explained in the business problem section, we will only be concentrating on locations within a 500 metre radius of the station. To visualise this, we will draw circles around the station that denote this 500m restriction. We finally get this map 
+In this step, we attempt to place the stations on a map of the city. Furthermore, as explained in the business problem section, we will only be concentrating on locations within a 500 metre radius of the station. To visualise this, we will draw circles around the station that denote this 500m restriction. We finally get this map: 
   
   ![Alt text](https://github.com/prabhavpratyaksh/Coursera_Capstone/blob/master/Final%20Assignment/Screenshots/SS%20-%20second%20map.png "Map of stations on Western Line" )
   
@@ -95,12 +97,41 @@ We can also get a look at the venue categories that are populated in the Foursqu
   
   ![Alt text](https://github.com/prabhavpratyaksh/Coursera_Capstone/blob/master/Final%20Assignment/Screenshots/SS%20-%20foursquare%20categories.png "Foursquare venue categories" )
   
-Finally, we can create a dataframe that shows 10 most common venues near stations. This dataframe looks like this
+Finally, we can create a dataframe that shows 10 most common venues near stations. This dataframe looks like this:
   
   ![Alt text](https://github.com/prabhavpratyaksh/Coursera_Capstone/blob/master/Final%20Assignment/Screenshots/SS%20-%20common%20venues.png "Foursquare 10 most common venues" )
   
 Now we proceed to make a heatmap that shows the locations of competing restaurants within a 500m radius
   
-### Heatmap Visualization <a name="Heatmap"></a>  
+### Heatmap Visualization <a name="Heatmap"></a>    
   
-Since our restaurant will serve only Indian cuisine, Chinese cuisine, and fast foods we will filter our dataframe to only 
+Since our restaurant will serve only Indian cuisine, Chinese cuisine, and fast foods we will filter our dataframe to only include these venue categories. Once we do that, we have our data ready to make a heatmap. Do note that this heatmap, will be added as an additional layer on top of our base map created earlier. We get the following map
+    
+    ![Alt text](https://github.com/prabhavpratyaksh/Coursera_Capstone/blob/master/Final%20Assignment/Screenshots/SS%20-%20final%20map%20layer.png "Foursquare venue categories" )
+
+Now, we have this map, we can do a simple analysis to get an idea about potential locations to open the restaurant and also the locations to avoid building it.
+    
+## Results & Discussion <a name="Results"></a>
+    
+Now, we come to the final phase of our analysis. The map rendered above should give us a quick visual idea of which stations are ideal locations for setting up our restaurant. Starting from the southern end of the line, Mahalaxmi looks like a good candidate. However, we will not iclude this as Foursquare does not have venue data for this location. Moving northwards, **Matunga Road** looks like a promising candidates. Further noth, we see **Santacruz**, **Vile Parle**, **Ram Mandir** and finally **Malad** with very few competing restaurants around (we are limiting our analysis to the city centre only, i.e. not including suburban townships around Mumbai. Therefore, stations north of Borivali are not considered). We can explore these 5 stations in a bit more detail. 
+    
+If we filter our common venues for these 5 stations, we get the following result
+    
+    ![Alt text](https://github.com/prabhavpratyaksh/Coursera_Capstone/blob/master/Final%20Assignment/Screenshots/SS%20-%20locations.png "Map of stations on Western Line" )
+    
+Note that for Ram Mandir station and Vile Parle station, we have Indian and Fast Food restaurants as the most common venue. Hence, we can remove these from our scope. Therefore, we have **Malad**, **Matunga Road**, and **Santacruz stations** as the ideal locations for opening our restaurant.
+    
+## Conclusion <a name="Conclusion"></a>  
+   
+We started with a premise of finding suitable locations for our new restaurant. To simplify this task, we came up with certain assumptions and based on those, looked for ideal locations. Leveraging Foursquare API and the Folium library, we did manage to find suitable locations.
+
+Of course, this was a very simplistic analysis. We could have used even more complex criteria to scout for locations such as:  
+    
+    1. real estate prices
+    2. building regulations
+    3. zoning requirements
+    4. median income level of neighbourhood
+    5. utility charges in the neighbourhood
+    6. availability of logistic supply chain, etc.    
+    
+However, as a starting point, this analysis helped us to narrow down potential locations and allow a starting point from which more complex analysis could be done. Much of this code and the resulting analysis can be reused in different modules that aim to do more complex analysis.    
