@@ -39,6 +39,7 @@ To obtain the list of the stations we will utilise this [Wikipedia link](https:/
 As for the tools used in Python, we installed the following libraries:
   1. Numpy
   2. Pandas
+  3. Requests
   3. BeautifulSoup
   4. Geocoder
   5. Folium 
@@ -46,4 +47,8 @@ As for the tools used in Python, we installed the following libraries:
 ## Methodology
   
 ### Webscraping  
-
+  <br></br>
+sdsd
+  1.
+  2.
+  
